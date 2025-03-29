@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>neo0531 portfolio</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/b47dc58fb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta
+      name="description"
+      content="이승호의 포트폴리오입니다.프론트와 백드를 다룹니다."
+    />
+    <meta name="author" content="이승호" />
+    <meta name="keywords" content="dnpqroqkf,vmfhsxmdpsem,백엔드" />
+    <!-- OG TAG -->
+    <meta property="og:title" content="이승호포트폴리오" />
+    <meta property="og:description" content="이승호 웹개발포트폴리오입니다." />
+    <meta property="og:image" content="./images/home/profile.jpg" />
+    <meta property="og:url" content="./images/home/profile.jpg" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <!-- 이미지 -->
+        <div class="nav__logo">
+          <img
+            class="nav__img"
+            src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"
+            alt="로고"
+          />
+          <a href="#" class="nav__brand">이승호</a>
+        </div>
+        <!-- 메뉴 -->
+        <div class="nav__menu show" id="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">about</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- home -->
+      <section id="home" class="home container section">
+        <!-- home data -->
+        <div class="home__data">
+          <h2 class="home__title" id="typeit">
+            안녕하세요 <br />
+            풀스택 개발자
+            <strong class="home__title-color">이승호 </strong>입니다.
+          </h2>
+          <a href="#contact" class="button">contact</a>
+          <div class="home__social">
+            <a
+              href="https://www.youtube.com/@syukaworld"
+              target="_blank"
+              title="이승호유튜브"
+              ><i class="fa-brands fa-youtube home__social-icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/seungho2610/"
+              target="_blank"
+              title="이승호인스타"
+            >
+              <i class="fa-brands fa-square-instagram home__social-icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/seungho2610/"
+              target="_blank"
+              title="이승호깃허브"
+              ><i class="fa-brands fa-github home__social-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <img
+          class="home__img"
+          src="./images/home/profile.jpg"
+          style="width: 400px"
+          alt="프로필이미지"
+        />
+      </section>
+      <!-- about -->
+      <section class="section about bg-gray-1" id="about">
+        <h2 class="section__title">About</h2>
+        <div class="container about__container">
+          <img
+            class="about__img"
+            src="./images/about/about.jpg"
+            alt="about"
+            style="width: 400px"
+            title="어바웃이미지입니다. "
+          />
+
+          <div class="about__data">
+            <h3 class="about__subtitle">저는 이렇게 일합니다.</h3>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              impedit accusantium repudiandae esse veritatis temporibus eius
+              ipsum eligendi illo obcaecati, eum vitae totam. Eius velit
+              temporibus cumque quam explicabo quis!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--  skills-->
+      <section id="skills" class="section skills">
+        <h2 class="section__title">skills</h2>
+        <div class="skills__container container">
+          <!-- 스킬데이터 -->
+          <div class="skills__data1">
+            <h3 class="skills__subtitle">professional Skills</h3>
+            <p class="skills__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus ut, necessitatibus temporibus non itaque nulla incidunt,
+              libero totam dolorem dignissimos est modi molestias optio tempore,
+              placeat veniam perspiciatis facilis cumque.
+            </p>
+            <div>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-html5 skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">HTML5</span>
+                </div>
+                <div>
+                  <!-- percetage -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  max="100"
+                  value="85"
+                  id="html5"
+                ></progress>
+              </article>
+
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-css3-alt skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">css</span>
+                </div>
+                <div>
+                  <!-- percetage -->
+                  <span class="skills__percentage">70%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  max="100"
+                  value="70"
+                  id="css"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-js skills__icon"></i>
+                  <!-- <i class="fa-brands fa-react"></i> -->
+                  <!-- skill name -->
+                  <span class="skills__name">javascript</span>
+                </div>
+                <div>
+                  <!-- percetage -->
+                  <span class="skills__percentage">80%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  max="100"
+                  value="80"
+                  id="javascript"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-solid fa-server skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">backend</span>
+                </div>
+                <div>
+                  <!-- percetage -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  max="100"
+                  value="85"
+                  id="backend"
+                ></progress>
+              </article>
+            </div>
+          </div>
+          <!-- 이미지 -->
+          <div>
+            <img
+              class="skills__img"
+              src="./images/skills/skills.jpg"
+              alt="skills"
+              title="업무스킬이미지입니다."
+            />
+          </div>
+        </div>
+      </section>
+      <!--  work-->
+      <section id="work" class="section work">
+        <h2 class="section__title">work</h2>
+        <div class="work__container container">
+          <a
+            class="work__link"
+            href="https://www.instagram.com/seungho2610/"
+            target="_blank"
+            title="work1"
+          >
+            <img
+              class="work__img"
+              src="./images/work/work1.png"
+              alt="work1"
+              title="업무스킬이미지입니다."
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://www.instagram.com/seungho2610/"
+            target="_blank"
+            title="work1"
+          >
+            <img
+              class="work__img"
+              src="./images/work/work2.png"
+              alt="work1"
+              title="업무스킬이미지입니다."
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://www.instagram.com/seungho2610/"
+            target="_blank"
+            title="work1"
+          >
+            <img
+              class="work__img"
+              src="./images/work/work3.png"
+              alt="work1"
+              title="업무스킬이미지입니다."
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://www.instagram.com/seungho2610/"
+            target="_blank"
+            title="work1"
+          >
+            <img
+              class="work__img"
+              src="./images/work/work4.png"
+              alt="work1"
+              title="업무스킬이미지입니다."
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://www.instagram.com/seungho2610/"
+            target="_blank"
+            title="work1"
+          >
+            <img
+              class="work__img"
+              src="./images/work/work5.png"
+              alt="work1"
+              title="업무스킬이미지입니다."
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://www.instagram.com/seungho2610/"
+            target="_blank"
+            title="work1"
+          >
+            <img
+              class="work__img"
+              src="./images/work/work6.png"
+              alt="work1"
+              title="업무스킬이미지입니다."
+            />
+          </a>
+        </div>
+      </section>
+      <!--  contact-->
+      <section id="contact" class="section contact">
+        <h2 class="section__title">contact</h2>
+        <div class="contact__container container">
+          <form class="contact__form" id="contactForm" action="">
+            <input
+              class="contact__input"
+              type="text"
+              name="name"
+              placeholder="이름"
+              required
+            />
+            <input
+              class="contact__input"
+              type="text"
+              name="title"
+              placeholder="제목"
+              required
+            />
+            <textarea
+              class="contact__input"
+              name="message"
+              placeholder="제목"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            >
+            </textarea>
+            <button class="contact__button button">보내기</button>
+          </form>
+        </div>
+      </section>
+      <button class="floating-button" id="floating-button">
+        <i class="fa-solid fa-arrow-up floating-button-icon"></i>
+      </button>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <p class="footer__title">이승호</p>
+      <div class="footer_social">
+        <a
+          href="https://www.youtube.com/@syukaworld"
+          target="_blank"
+          title="이승호유튜브"
+          ><i class="fa-brands fa-youtube footer__icon"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/seungho2610/"
+          target="_blank"
+          title="이승호인스타"
+        >
+          <i class="fa-brands fa-square-instagram footer__icon"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/seungho2610/"
+          target="_blank"
+          title="이승호깃허브"
+          ><i class="fa-brands fa-github footer__icon"></i>
+        </a>
+      </div>
+      <p class="footer__copy">copyright@ 이승호 all right reserved</p>
+    </footer>
+  </body>
+</html>
