@@ -67,3 +67,15 @@ const typeit = new TypeIt('#typeit', {
   waituntilVisible: true,
 });
 typeit.type('').go();
+
+const contactForm = document.querySelector('#contactForm');
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log(e);
+  const name = contactForm.name.value;
+  const title = contactForm.title.value;
+  const message = contactForm.message.value;
+  const to = 'neo0531@nate.com';
+
+  location.href = `mailto:${to}?subject=[${name}님 문의${title}]&body=${message}`;
+});
